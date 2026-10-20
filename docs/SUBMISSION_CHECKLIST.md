@@ -11,10 +11,10 @@ The [organizer's event page](https://dorahacks.io/hackathon/portaldot-hacker-hou
 - [x] Historical read-only Portaldot RPC response: `evidence/portaldot-rpc-read.json`.
 - [x] Read-only V3 testnet EVM chain ID response: `evidence/portaldot-v3-evm-rpc-read.json`.
 - [ ] Recheck RPC reachability from a network that permits WebSocket connections; record the new result without replacing historical evidence if it fails.
-- [ ] Verify the public [GitHub repository](https://github.com/noboru59631/trustfall-portaldot) contains the final source, docs and evidence, and that no secrets or local hosting credentials were published.
+- [x] Verify the public [GitHub repository](https://github.com/noboru59631/trustfall-portaldot) contains the source, docs and evidence, and that no secrets or local hosting credentials were published.
 - [ ] Document that testnet contract address and transaction hash are still unavailable; do not substitute RPC metadata for deployment evidence.
-- [ ] Preserve at least three genuine development commits during the event, as required by the event page.
-- [ ] Recheck the deployed demo on a phone after any update, including all four scenarios and resolution buttons.
+- [x] Preserve at least three genuine development commits during the event, as required by the event page.
+- [x] Check the deployed demo at a 390px mobile viewport, including scenario navigation, dispute resolution, and no horizontal overflow. Recheck after the final footer link deploy.
 - [ ] Open the DoraHacks interim form, confirm its fields and attachment rules, then paste the English submission and links.
 - [ ] Get the user's confirmation immediately before actually submitting to DoraHacks.
 - [ ] Save the submitted URL, timestamp, and receipt or screenshot after submission.

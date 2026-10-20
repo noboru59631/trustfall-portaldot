@@ -1,6 +1,7 @@
 # TrustFall — Interim Submission
 
-Public repository: https://github.com/noboru59631/trustfall-portaldot  
+Public repository: https://github.com/noboru59631/trustfall-portaldot
+
 Live demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 
 ## One-line pitch

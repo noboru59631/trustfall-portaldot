@@ -91,6 +91,7 @@ h2 { margin: 8px 0 0; font-family: var(--serif); font-size: clamp(40px, 6vw, 72p
 .architecture-note { max-width: 720px; margin: 28px 0 0; line-height: 1.6; }
 footer { padding: 28px clamp(20px, 5vw, 72px); display: flex; justify-content: space-between; align-items: center; gap: 20px; background: var(--paper); }
 footer div { display: flex; align-items: center; gap: 10px; } footer p { color: var(--muted); }
+footer a { color: inherit; font-weight: 700; }
 @keyframes enter { from { opacity: 0; transform: translateY(8px); } }
 @media (max-width: 900px) {
   .hero, .simulation-stage { grid-template-columns: 1fr; }
