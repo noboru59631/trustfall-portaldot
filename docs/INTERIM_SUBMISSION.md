@@ -40,6 +40,18 @@ The proposed settlement layer would implement the simulator's state machine in a
 
 The project has no Portaldot testnet contract address, transaction hash, or explorer link. The ink! candidate needs full state transitions, local build and tests, a verified asset route, and a safe testnet deployment. We provide the live simulator and read-only RPC evidence now, and identify deployment as the next proof milestone rather than presenting metadata reads as contract activity.
 
+## Form-ready check-in answers
+
+**Project name:** TrustFall
+
+**One-sentence overview:** TrustFall helps a Web3 community and a freelancer preview payment, refund, hold, and split outcomes for a 500 USDC design agreement before signing.
+
+**Current project progress:** We published a responsive English simulator covering success, delay, non-delivery, and quality dispute, including four dispute resolutions. Eight deterministic tests pass, including conservation of the 500 USDC example balance. The public repository contains the README, source, architecture, development record, research, and read-only RPC evidence. A mainnet metadata response was saved earlier; a separate read-only call to the organizer-published V3 testnet EVM endpoint returned chain ID 420420777. Neither call executed a contract or moved tokens.
+
+**Outstanding items:** Complete and build the escrow contract, implement timeout and mediated split rules, establish a safe testnet asset route, deploy to the V3 testnet, capture contract address and transaction hashes, and prepare the organizer's required video and pitch deck. The current demo is simulated and uses no wallet or funds.
+
+**Testnet deployment details:** No contract has been deployed. No contract address, transaction hash, or explorer link is available. Read-only RPC evidence is provided separately and must not be presented as deployment evidence.
+
 ## Demo flow
 
 1. Start with the 500 USDC design agreement preview.
