@@ -1,0 +1,11 @@
+{
+  "name": "trustfall-portaldot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "check:rpc": "node scripts/rpc-smoke.mjs"
+  }
+}
+

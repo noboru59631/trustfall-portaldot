@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TrustFall simulates escrow outcomes for a 500 USDC Web3 design engagement before anyone signs.">
+  <title>TrustFall — See the outcome before you sign</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="TrustFall home"><span class="mark">TF</span><span>TrustFall</span></a>
+    <div class="status-key" aria-label="Evidence status legend">
+      <span class="chip demo">DEMO</span>
+      <span class="chip simulated">SIMULATED</span>
+      <span class="chip verified">RPC READ VERIFIED</span>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTALDOT HACKER HOUSE 2026 · MVP</p>
+        <h1>See where the money goes <em>before</em> you sign.</h1>
+        <p class="lede">A pre-contract outcome simulator for a Web3 community hiring a freelance designer for <strong>500 USDC</strong>.</p>
+        <a class="primary" href="#simulator">Try four outcomes <span>↓</span></a>
+      </div>
+      <div class="contract-card" aria-label="Example agreement">
+        <div class="card-top"><span>AGREEMENT PREVIEW</span><span class="chip simulated">SIMULATED</span></div>
+        <div class="amount">500 <small>USDC</small></div>
+        <div class="parties"><span>Web3 Community</span><span>→</span><span>Freelance Designer</span></div>
+        <dl>
+          <div><dt>Work</dt><dd>Brand identity kit</dd></div>
+          <div><dt>Deadline</dt><dd>10 days + 48h grace</dd></div>
+          <div><dt>Release</dt><dd>Acceptance or resolution</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="simulator" id="simulator">
+      <div class="section-heading">
+        <div><p class="eyebrow">OUTCOME LAB</p><h2>Choose what happens next.</h2></div>
+        <button id="replay" class="secondary" type="button">Replay flow</button>
+      </div>
+
+      <div class="scenario-grid" role="group" aria-label="Contract scenarios">
+        <button type="button" data-scenario="success" class="active"><span>01</span><strong>Success</strong><small>Approved on time</small></button>
+        <button type="button" data-scenario="delay"><span>02</span><strong>Delay</strong><small>Grace period used</small></button>
+        <button type="button" data-scenario="missing"><span>03</span><strong>Non-delivery</strong><small>Deadline expires</small></button>
+        <button type="button" data-scenario="dispute"><span>04</span><strong>Quality dispute</strong><small>Funds stay held</small></button>
+      </div>
+
+      <div class="simulation-stage">
+        <div class="flow-panel">
+          <div class="panel-label">EVENT TRACE <span class="chip simulated">SIMULATED</span></div>
+          <ol id="timeline" class="timeline animate" aria-live="polite"></ol>
+        </div>
+        <aside id="outcome" class="outcome" data-tone="success">
+          <p class="panel-label">FINAL STATE</p>
+          <div id="outcome-label" class="outcome-label">PAYMENT</div>
+          <h3 id="outcome-headline">Approved delivery pays the freelancer</h3>
+          <div class="ledger">
+            <div><span>Community refund</span><strong id="community-amount">0 USDC</strong></div>
+            <div><span>Freelancer payment</span><strong id="freelancer-amount">500 USDC</strong></div>
+            <div><span>Still held</span><strong id="held-amount">0 USDC</strong></div>
+          </div>
+          <p id="conservation" class="conservation">✓ Funds conserved: 500 USDC</p>
+        </aside>
+      </div>
+
+      <div id="resolution-panel" class="resolution" hidden>
+        <div><strong>Resolve the dispute</strong><span>This is a policy preview, not an on-chain action.</span></div>
+        <div role="group" aria-label="Dispute resolution">
+          <button type="button" data-resolution="hold" class="active">Keep held</button>
+          <button type="button" data-resolution="pay">Pay 500</button>
+          <button type="button" data-resolution="refund">Refund 500</button>
+          <button type="button" data-resolution="split">Split 350 / 150</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="truth-section">
+      <div class="section-heading"><div><p class="eyebrow">EVIDENCE, NOT HYPE</p><h2>Every claim has a status.</h2></div></div>
+      <div class="truth-grid">
+        <article><span class="chip verified">RPC READ VERIFIED</span><h3>Portaldot RPC reads</h3><p>A saved read-only RPC response records chain identity, header and runtime metadata. This does not prove contract execution or USDC settlement. No key and no funds are used.</p></article>
+        <article><span class="chip demo">DEMO</span><h3>ink! escrow contract</h3><p>Contract source and state model are included for review. Deployment is not claimed until a compatible test network and artifact build are proven.</p></article>
+        <article><span class="chip simulated">SIMULATED</span><h3>500 USDC ledger</h3><p>The 500 USDC ledger is browser-local; no token moves. Portaldot's official material confirms POT; an official USDC asset route was not found.</p></article>
+        <article><span class="chip verified">RPC READ VERIFIED</span><h3>V3 EVM testnet</h3><p>The organizer lists a V3 testnet EVM endpoint, and a read-only chain ID call returned 420420777. No contract was deployed. A callable DaaS API remains unverified.</p></article>
+      </div>
+    </section>
+
+    <section class="architecture">
+      <p class="eyebrow">ARCHITECTURE</p>
+      <h2>Simulation first. Chain proof second.</h2>
+      <div class="arch-flow" aria-label="TrustFall architecture">
+        <div><span>01</span><strong>Agreement UI</strong><small>Scope · deadline · rules</small></div><b>→</b>
+        <div><span>02</span><strong>Outcome engine</strong><small>Deterministic state machine</small></div><b>→</b>
+        <div><span>03</span><strong>ink! candidate</strong><small>Escrow · dispute · release</small></div><b>→</b>
+        <div><span>04</span><strong>Portaldot</strong><small>Substrate RPC · pallet-contracts</small></div>
+      </div>
+      <p class="architecture-note">The public demo stops at step 02. Steps 03–04 remain clearly labelled until deployment evidence exists.</p>
+    </section>
+  </main>
+
+  <footer><div><span class="mark">TF</span><strong>TrustFall</strong></div><p>Built for transparent pre-contract decisions. No wallet connection. No real funds.</p></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+
