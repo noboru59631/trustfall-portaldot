@@ -8,9 +8,8 @@ The [organizer's event page](https://dorahacks.io/hackathon/portaldot-hacker-hou
 - [x] Public demo URL and walkthrough: `docs/DEMO_GUIDE.md`.
 - [x] Architecture diagram and trust boundaries: `docs/ARCHITECTURE.md`.
 - [x] Deterministic outcome tests: eight passing on 21 October 2026.
-- [x] Historical read-only Portaldot RPC response: `evidence/portaldot-rpc-read.json`.
+- [x] Refreshed read-only Portaldot mainnet RPC response: `evidence/portaldot-rpc-read.json`.
 - [x] Read-only V3 testnet EVM chain ID response: `evidence/portaldot-v3-evm-rpc-read.json`.
-- [ ] Recheck RPC reachability from a network that permits WebSocket connections; record the new result without replacing historical evidence if it fails.
 - [x] Verify the public [GitHub repository](https://github.com/noboru59631/trustfall-portaldot) contains the source, docs and evidence, and that no secrets or local hosting credentials were published.
 - [ ] Document that testnet contract address and transaction hash are still unavailable; do not substitute RPC metadata for deployment evidence.
 - [ ] Obtain the user's Discord ID, SS58 testnet wallet address, skills, event source, and any optional Telegram ID. Never request or use a private key or seed phrase.

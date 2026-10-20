@@ -7,7 +7,7 @@ flowchart LR
   SM -. design reference .-> C[ink! escrow candidate: partial]
   C -. unbuilt and not deployed .-> PC[pallet-contracts]
   PC --> P[Portaldot / Substrate]
-  RPC[Historical read-only RPC response] --> P
+  RPC[Read-only mainnet RPC response] --> P
   EVM[V3 testnet EVM chain ID read] --> P
   D[DaaS adapter placeholder] -. official callable API unverified .-> SM
 ```

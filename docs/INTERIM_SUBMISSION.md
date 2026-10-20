@@ -25,7 +25,7 @@ The proposed settlement layer would implement the simulator's state machine in a
 - Responsive public simulator with four contract outcomes.
 - Explicit DEMO, SIMULATED, RPC READ VERIFIED, and UNVERIFIED labels.
 - Tested conservation of the full 500 USDC principal across every outcome.
-- A historical read-only Portaldot RPC response and a repeatable script requiring no key or funds. The latest rerun failed to connect from this environment.
+- A refreshed read-only Portaldot mainnet RPC response and a repeatable script requiring no key or funds.
 - Reviewable, unbuilt ink! escrow candidate and architecture documentation.
 
 ## What is not claimed
@@ -46,7 +46,7 @@ The project has no Portaldot testnet contract address, transaction hash, or expl
 
 **One-sentence overview:** TrustFall helps a Web3 community and a freelancer preview payment, refund, hold, and split outcomes for a 500 USDC design agreement before signing.
 
-**Current project progress:** We published a responsive English simulator covering success, delay, non-delivery, and quality dispute, including four dispute resolutions. Eight deterministic tests pass, including conservation of the 500 USDC example balance. The public repository contains the README, source, architecture, development record, research, and read-only RPC evidence. A mainnet metadata response was saved earlier; a separate read-only call to the organizer-published V3 testnet EVM endpoint returned chain ID 420420777. Neither call executed a contract or moved tokens.
+**Current project progress:** We published a responsive English simulator covering success, delay, non-delivery, and quality dispute, including four dispute resolutions. Eight deterministic tests pass, including conservation of the 500 USDC example balance. The public repository contains the README, source, architecture, development record, research, and read-only RPC evidence. A refreshed mainnet metadata read returned Portaldot chain identity and runtime information; a separate read-only call to the organizer-published V3 testnet EVM endpoint returned chain ID 420420777. Neither call executed a contract or moved tokens.
 
 **Outstanding items:** Complete and build the escrow contract, implement timeout and mediated split rules, establish a safe testnet asset route, deploy to the V3 testnet, capture contract address and transaction hashes, and prepare the organizer's required video and pitch deck. The current demo is simulated and uses no wallet or funds.
 

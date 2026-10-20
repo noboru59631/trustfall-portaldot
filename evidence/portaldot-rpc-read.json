@@ -1,7 +1,7 @@
 {
-  "status": "RPC READ VERIFIED (historical)",
+  "status": "RPC READ VERIFIED",
   "scope": "Read-only RPC connectivity and metadata; no transaction was signed or submitted.",
-  "checkedAt": "2026-10-20T15:06:26.835Z",
+  "checkedAt": "2026-10-20T15:56:44.221Z",
   "endpoint": "wss://mainnet.portaldot.io",
   "chain": "Portaldot Mainnet",
   "node": {
@@ -16,14 +16,14 @@
   "latestHeader": {
     "digest": {
       "logs": [
-        "0x0642414245340204000000cadbc70100000000",
-        "0x054241424501010068f6994ba1737e9631bfb8a2aedd8a83796890766b7cc00f5af466103828166e0b33e0fb2ca4e6c5925a49e580bcabb9dfc87034edebfffbc4644c853ae783"
+        "0x0642414245340205000000fcdbc70100000000",
+        "0x054241424501017857891833b60bdbd3ede53b4d1a72a387ced7950e68f1b6909e6601e0fdf41d2c7e40ead70765d1e51fbd28c32be55a31962ee6b25b250c2b58082d2c1b428c"
       ]
     },
-    "extrinsicsRoot": "0x1e662d9d2127226f9896ea63cd96987afe433455850b118ff45ab2885425c87d",
-    "number": "0x29ba24",
-    "parentHash": "0x8d5bdde24b98c4fd85d83558f42ffff7302829219e6d2542523ec69ab50ac9af",
-    "stateRoot": "0xa0b61d2b776b800c278d0a2f134ad26f4bd8d903cfd1e1dd6e036a07fdc750b2"
+    "extrinsicsRoot": "0x14ac395c0ca9cd909cc11ebe01a575e9f0cd0ec5ae12c1d3ff0f9613365016de",
+    "number": "0x29ba56",
+    "parentHash": "0xc051911a6e05881bb34b58a4944df3c8b8817387bcab4add662e9372443376db",
+    "stateRoot": "0x6250ab08f4cd7dfed704e40d77dd6cd1ed456eafdf6e35cc29723c13992e6e81"
   },
   "runtimeVersion": {
     "apis": [

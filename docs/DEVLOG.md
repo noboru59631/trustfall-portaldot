@@ -4,7 +4,7 @@
 
 - Built and published the browser-local 500 USDC outcome simulator with success, delay, non-delivery, and quality-dispute paths.
 - Added deterministic tests for fund conservation and payment, refund, hold, and split outcomes.
-- Captured a read-only Portaldot mainnet metadata response without a key, wallet, or funds.
+- Captured and rechecked a read-only Portaldot mainnet metadata response without a key, wallet, or funds.
 - Prepared a partial ink! escrow source candidate and documented its missing transitions and lack of build or deployment proof.
 - Reviewed the organizer's V3 testnet announcement and captured a read-only EVM `eth_chainId` response of 420420777.
 - Revised public wording to separate RPC reads, simulated balances, and unexecuted contract source.

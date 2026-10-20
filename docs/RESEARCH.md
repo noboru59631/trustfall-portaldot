@@ -2,7 +2,7 @@
 
 Research date: 2026-10-21 JST. Portaldot developer materials and the organizer's DoraHacks event page are treated as primary sources for their respective claims.
 
-The saved RPC evidence records a successful read at 2026-10-21 00:06 JST. A rerun on 2026-10-21 failed at WebSocket connection from this environment, so current RPC availability is not established by this review. A chain read does not demonstrate contract deployment or token settlement.
+The saved mainnet RPC evidence was refreshed at 2026-10-21 00:56 JST. A first rerun failed within the restricted environment; the permitted read-only retry succeeded. A chain read does not demonstrate contract deployment or token settlement.
 
 | Capability | Status | Evidence | TrustFall decision |
 | --- | --- | --- | --- |

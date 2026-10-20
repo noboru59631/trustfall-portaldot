@@ -12,7 +12,7 @@ TrustFall lets a community and a freelance designer rehearse success, delay, non
 | Layer | Status |
 | --- | --- |
 | Interactive simulator | SIMULATED and tested |
-| Portaldot read-only RPC | Historical RPC response saved; the 2026-10-21 rerun failed to connect from this environment |
+| Portaldot read-only RPC | Rechecked on 2026-10-21 JST; chain identity, header, and runtime metadata saved, with no transaction |
 | Portaldot V3 testnet EVM RPC | Read-only `eth_chainId` returned 420420777; no contract or token activity |
 | ink! escrow source | DEMO candidate, not built, tested, or deployed; incomplete relative to the simulator |
 | USDC settlement | UNVERIFIED on Portaldot |

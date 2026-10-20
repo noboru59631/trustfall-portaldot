@@ -12,7 +12,7 @@
 | Item | Status | Artifact |
 | --- | --- | --- |
 | Four-outcome funds logic | SIMULATED | `tests/simulator.test.mjs` |
-| Mainnet RPC identity and runtime read | RPC READ VERIFIED (historical) | `evidence/portaldot-rpc-read.json` records a 2026-10-21 00:06 JST response with Portaldot Mainnet, POT, SS58 42, 14 decimals and runtime spec 1002. A 2026-10-21 rerun failed to connect from this environment. |
+| Mainnet RPC identity and runtime read | RPC READ VERIFIED | `evidence/portaldot-rpc-read.json` records a 2026-10-21 00:56 JST response with Portaldot Mainnet, POT, SS58 42, 14 decimals and runtime spec 1002. No transaction was submitted. |
 | V3 testnet EVM chain ID | RPC READ VERIFIED | `evidence/portaldot-v3-evm-rpc-read.json` records an `eth_chainId` response of 420420777 from the organizer-published endpoint. No contract or token activity. |
 | Escrow contract source | DEMO | `contracts/trustfall/lib.rs` is an unbuilt, untested candidate; delay, dispute resolution, split payment, and timeout rules are not implemented. |
 | Contract deployment | UNVERIFIED | No transaction submitted |
