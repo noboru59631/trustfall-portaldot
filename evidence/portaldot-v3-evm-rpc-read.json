@@ -1,0 +1,10 @@
+{
+  "status": "RPC READ VERIFIED",
+  "scope": "Read-only eth_chainId response from the organizer-published V3 testnet EVM endpoint. No transaction, contract execution, or token transfer was performed.",
+  "checkedAt": "2026-10-20T15:46:34Z",
+  "endpoint": "https://test-evm-rpc-v3.portaldot.dev",
+  "method": "eth_chainId",
+  "resultHex": "0x190f1ca9",
+  "chainIdDecimal": 420420777,
+  "source": "https://dorahacks.io/hackathon/portaldot-hacker-house-2026/detail"
+}

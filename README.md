@@ -42,6 +42,7 @@ The RPC check is read-only. It does not use a wallet, secret key, or funds. A su
 - `docs/INTERIM_SUBMISSION.md` — copy-ready English interim submission.
 - `docs/DEMO_GUIDE.md` — short walkthrough with expected balances.
 - `docs/SUBMISSION_CHECKLIST.md` — interim handoff and remaining checks.
+- `docs/DEVLOG.md` — dated development record and next proof steps.
 
 ## Safety
 
@@ -54,5 +55,4 @@ This prototype intentionally has no wallet connection and accepts no secrets. Ne
 - Chain info: https://portaldot-dev.readthedocs.io/en/latest/chain-info.html
 - ink! interfacing: https://portaldot-dev.readthedocs.io/en/latest/python-sdk/usage/ink-contract-interfacing.html
 - Official GitHub linked by Portaldot: https://github.com/portaldotVolunteer/Portaldot
-
 

@@ -1,0 +1,90 @@
+{
+  "status": "RPC READ VERIFIED (historical)",
+  "scope": "Read-only RPC connectivity and metadata; no transaction was signed or submitted.",
+  "checkedAt": "2026-10-20T15:06:26.835Z",
+  "endpoint": "wss://mainnet.portaldot.io",
+  "chain": "Portaldot Mainnet",
+  "node": {
+    "name": "Portaldot Node",
+    "version": "2.0.0-unknown-x86_64-linux-gnu"
+  },
+  "properties": {
+    "ss58Format": 42,
+    "tokenDecimals": 14,
+    "tokenSymbol": "POT"
+  },
+  "latestHeader": {
+    "digest": {
+      "logs": [
+        "0x0642414245340204000000cadbc70100000000",
+        "0x054241424501010068f6994ba1737e9631bfb8a2aedd8a83796890766b7cc00f5af466103828166e0b33e0fb2ca4e6c5925a49e580bcabb9dfc87034edebfffbc4644c853ae783"
+      ]
+    },
+    "extrinsicsRoot": "0x1e662d9d2127226f9896ea63cd96987afe433455850b118ff45ab2885425c87d",
+    "number": "0x29ba24",
+    "parentHash": "0x8d5bdde24b98c4fd85d83558f42ffff7302829219e6d2542523ec69ab50ac9af",
+    "stateRoot": "0xa0b61d2b776b800c278d0a2f134ad26f4bd8d903cfd1e1dd6e036a07fdc750b2"
+  },
+  "runtimeVersion": {
+    "apis": [
+      [
+        "0xdf6acb689907609b",
+        3
+      ],
+      [
+        "0x37e397fc7c91f5e4",
+        1
+      ],
+      [
+        "0x40fe3ad401f8959a",
+        5
+      ],
+      [
+        "0xd2bc9897eed08f15",
+        2
+      ],
+      [
+        "0xf78b278be53f454c",
+        2
+      ],
+      [
+        "0xed99c5acb25eedf5",
+        2
+      ],
+      [
+        "0xcbca25e39f142387",
+        2
+      ],
+      [
+        "0x687ad44ad37f03c2",
+        1
+      ],
+      [
+        "0xbc9d89904f5b923f",
+        1
+      ],
+      [
+        "0x68b66ba122c93fa7",
+        1
+      ],
+      [
+        "0x37c8bb1350a9a2a8",
+        1
+      ],
+      [
+        "0x91d5df18b0d2cf58",
+        1
+      ],
+      [
+        "0xab3c0572291feb8b",
+        1
+      ]
+    ],
+    "authoringVersion": 10,
+    "implName": "substrate-node",
+    "implVersion": 0,
+    "specName": "portaldot",
+    "specVersion": 1002,
+    "transactionVersion": 2
+  }
+}
