@@ -5,6 +5,8 @@
 Public demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 Source repository: https://github.com/noboru59631/trustfall-portaldot
 
+Interim materials: [48-second simulated UI walkthrough](demo/trustfall-demo-40s.mp4) · [pitch deck](docs/PITCH_DECK.md) · [submission text](docs/INTERIM_SUBMISSION.md)
+
 TrustFall lets a community and a freelance designer rehearse success, delay, non-delivery, and quality-dispute outcomes before signing. It makes payment, refund, and hold states explicit while keeping unverified chain capabilities visibly separate from the working simulator.
 
 ## Status
@@ -55,4 +57,5 @@ This prototype intentionally has no wallet connection and accepts no secrets. Ne
 - Chain info: https://portaldot-dev.readthedocs.io/en/latest/chain-info.html
 - ink! interfacing: https://portaldot-dev.readthedocs.io/en/latest/python-sdk/usage/ink-contract-interfacing.html
 - Official GitHub linked by Portaldot: https://github.com/portaldotVolunteer/Portaldot
+
 
