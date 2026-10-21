@@ -1,5 +1,7 @@
 # TrustFall — Interim Submission
 
+Submitted to [Portaldot Hacker House 2026 on DoraHacks](https://dorahacks.io/build/50104) on 21 October 2026 JST. DoraHacks shows the Build as **Under Review**; organizer approval is not claimed.
+
 Public repository: https://github.com/noboru59631/trustfall-portaldot
 
 Live demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
