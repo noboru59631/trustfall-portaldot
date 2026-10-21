@@ -7,7 +7,7 @@ Source repository: https://github.com/noboru59631/trustfall-portaldot
 
 DoraHacks Build: https://dorahacks.io/build/50104 (submitted to Ecosystem DApps; under review as of 21 October 2026 JST)
 
-Interim materials: [48-second simulated UI walkthrough](demo/trustfall-demo-40s.mp4) · [pitch deck](docs/PITCH_DECK.md) · [submission text](docs/INTERIM_SUBMISSION.md)
+Interim materials: [48-second narrated UI walkthrough](demo/trustfall-demo-narrated.mp4) · [English narration transcript](docs/VIDEO_NARRATION.md) · [pitch deck](docs/PITCH_DECK.md) · [submission text](docs/INTERIM_SUBMISSION.md)
 
 TrustFall lets a community and a freelance designer rehearse success, delay, non-delivery, and quality-dispute outcomes before signing. It makes payment, refund, and hold states explicit while keeping unverified chain capabilities visibly separate from the working simulator.
 
