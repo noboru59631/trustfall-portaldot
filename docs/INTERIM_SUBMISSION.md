@@ -6,7 +6,7 @@ Public repository: https://github.com/noboru59631/trustfall-portaldot
 
 Live demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 
-Demo video (48 seconds, simulated UI walkthrough): https://raw.githubusercontent.com/noboru59631/trustfall-portaldot/main/demo/trustfall-demo-40s.mp4
+Demo video (48 seconds, English-narrated simulated UI walkthrough): https://raw.githubusercontent.com/noboru59631/trustfall-portaldot/main/demo/trustfall-demo-narrated.mp4
 
 Interim pitch deck: https://github.com/noboru59631/trustfall-portaldot/blob/main/docs/PITCH_DECK.md
 
