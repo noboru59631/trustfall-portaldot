@@ -2,6 +2,10 @@
 
 Public demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 
+English-narrated 48-second video: https://raw.githubusercontent.com/noboru59631/trustfall-portaldot/main/demo/trustfall-demo-narrated.mp4
+
+The narration describes simulated UI states. It does not claim that USDC moved or a contract executed on Portaldot.
+
 Suggested walkthrough (about two minutes):
 
 1. Open the English demo on desktop or mobile. Point to the **SIMULATED** agreement preview and the 500 USDC example amount. No wallet is connected.
@@ -12,3 +16,4 @@ Suggested walkthrough (about two minutes):
 6. Point to the evidence cards. **RPC READ VERIFIED** refers only to a saved chain metadata read. The ink! source is an unbuilt **DEMO** candidate, and USDC balances are **SIMULATED**.
 
 The live demo has no external navigation links or wallet prompts. Its main link jumps to the outcome simulator. The public demo should be checked again after any deployment change.
+
