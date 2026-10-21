@@ -6,7 +6,7 @@ The [organizer's event page](https://dorahacks.io/hackathon/portaldot-hacker-hou
 
 - [x] English pitch, problem, solution, Portaldot relevance, limits, and next proof milestone: `docs/INTERIM_SUBMISSION.md`.
 - [x] Public demo URL and walkthrough: `docs/DEMO_GUIDE.md`.
-- [x] Public 48-second simulated UI walkthrough: `demo/trustfall-demo-40s.mp4`.
+- [x] Public 48-second English-narrated simulated UI walkthrough: `demo/trustfall-demo-narrated.mp4`.
 - [x] Public interim pitch deck: `docs/PITCH_DECK.md`.
 - [x] Architecture diagram and trust boundaries: `docs/ARCHITECTURE.md`.
 - [x] Deterministic outcome tests: eight passing on 21 October 2026.
