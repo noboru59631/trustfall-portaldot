@@ -4,6 +4,10 @@ Public repository: https://github.com/noboru59631/trustfall-portaldot
 
 Live demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 
+Demo video (48 seconds, simulated UI walkthrough): https://raw.githubusercontent.com/noboru59631/trustfall-portaldot/main/demo/trustfall-demo-40s.mp4
+
+Interim pitch deck: https://github.com/noboru59631/trustfall-portaldot/blob/main/docs/PITCH_DECK.md
+
 ## One-line pitch
 
 TrustFall lets a Web3 community and a freelancer rehearse every money outcome of a 500 USDC creative contract before either side signs.
@@ -48,7 +52,7 @@ The project has no Portaldot testnet contract address, transaction hash, or expl
 
 **Current project progress:** We published a responsive English simulator covering success, delay, non-delivery, and quality dispute, including four dispute resolutions. Eight deterministic tests pass, including conservation of the 500 USDC example balance. The public repository contains the README, source, architecture, development record, research, and read-only RPC evidence. A refreshed mainnet metadata read returned Portaldot chain identity and runtime information; a separate read-only call to the organizer-published V3 testnet EVM endpoint returned chain ID 420420777. Neither call executed a contract or moved tokens.
 
-**Outstanding items:** Complete and build the escrow contract, implement timeout and mediated split rules, establish a safe testnet asset route, deploy to the V3 testnet, capture contract address and transaction hashes, and prepare the organizer's required video and pitch deck. The current demo is simulated and uses no wallet or funds.
+**Outstanding items:** Complete and build the escrow contract, implement timeout and mediated split rules, establish a safe testnet asset route, deploy to the V3 testnet, and capture contract address and transaction hashes. The current demo is simulated and uses no wallet or funds. A short video walkthrough and interim pitch deck are public; neither is evidence of on-chain execution.
 
 **Testnet deployment details:** No contract has been deployed. No contract address, transaction hash, or explorer link is available. Read-only RPC evidence is provided separately and must not be presented as deployment evidence.
 
@@ -64,4 +68,5 @@ The project has no Portaldot testnet contract address, transaction hash, or expl
 ## Next proof milestone
 
 Confirm an official funded test environment and exact contracts-pallet/ink! artifact compatibility, then deploy the smallest payable escrow, capture contract address, extrinsic hashes, events, block hashes, and reproduce payment/refund paths without real funds.
+
 
