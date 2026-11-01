@@ -1,11 +1,17 @@
 {
   "name": "trustfall-portaldot",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test",
+    "test": "node --test tests/simulator.test.mjs",
+    "build:evm": "node scripts/compile-evm.mjs",
+    "test:evm": "node scripts/compile-evm.mjs && node --test tests/trustfall-evm.test.mjs",
     "check:rpc": "node scripts/rpc-smoke.mjs"
+  },
+  "devDependencies": {
+    "ethers": "6.15.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.30"
   }
 }
-
