@@ -5,59 +5,70 @@
 Public demo: https://trustfall-portaldot-2026.crypto5555111.chatgpt.site/
 Source repository: https://github.com/noboru59631/trustfall-portaldot
 
-DoraHacks Build: https://dorahacks.io/build/50104 (submitted to Ecosystem DApps; under review as of 21 October 2026 JST)
+DoraHacks Build: https://dorahacks.io/build/50104
 
-Interim materials: [48-second narrated UI walkthrough](demo/trustfall-demo-narrated.mp4) · [English narration transcript](docs/VIDEO_NARRATION.md) · [pitch deck](docs/PITCH_DECK.md) · [submission text](docs/INTERIM_SUBMISSION.md)
-
-TrustFall lets a community and a freelance designer rehearse success, delay, non-delivery, and quality-dispute outcomes before signing. It makes payment, refund, and hold states explicit while keeping unverified chain capabilities visibly separate from the working simulator.
+TrustFall lets a community and a freelance designer rehearse success, delay, non-delivery, and quality-dispute outcomes before signing. The public UI remains a simulation until each flow has a matching Portaldot V3 transaction.
 
 ## Status
 
 | Layer | Status |
 | --- | --- |
-| Interactive simulator | SIMULATED and tested |
-| Portaldot read-only RPC | Rechecked on 2026-10-21 JST; chain identity, header, and runtime metadata saved, with no transaction |
-| Portaldot V3 testnet EVM RPC | Read-only `eth_chainId` returned 420420777; no contract or token activity |
-| ink! escrow source | DEMO candidate, not built, tested, or deployed; incomplete relative to the simulator |
-| USDC settlement | UNVERIFIED on Portaldot |
-| DaaS callable API | UNVERIFIED |
-| EVM endpoint | Documented by the hackathon organizer and read-only chain ID verified; contract deployment unverified |
+| Interactive simulator | **SIMULATED** and tested |
+| Portaldot read-only RPC | **RPC READ VERIFIED**; no transaction |
+| V3 EVM escrow source | **LOCAL EVM VERIFIED**; Solidity 0.8.30, Paris target, 5/5 settlement and safety tests |
+| V3 deployment | **NOT EXECUTED**; no contract address or transaction hash claimed |
+| V3 payment/refund/dispute | **NOT EXECUTED** |
+| Native tPOT settlement | Implemented in the EVM candidate; live V3 proof pending |
+| USDC settlement | **UNVERIFIED**; the EVM candidate does not claim USDC |
+| ink! escrow source | Legacy DEMO candidate, not deployed |
+
+## Verified contract behavior
+
+The EVM candidate uses distinct client, freelancer, and arbiter roles.
+
+- Approved delivery pays once; a second settlement reverts.
+- Non-delivery refund is unavailable until the recorded deadline.
+- A dispute holds all funds until the arbiter pays, refunds, or splits them.
+- Unauthorized delivery and resolution calls revert.
+- Unexpected direct deposits revert.
+- State changes occur before transfers and settlement functions have a reentrancy guard.
+
+See [V3 EVM evidence](docs/V3_EVM_EVIDENCE.md).
 
 ## Run locally
 
 Serve `dist/` with any static web server, or open `dist/index.html` in a modern browser.
 
 ```bash
+npm install
 npm test
+npm run test:evm
 npm run check:rpc
 ```
 
-The RPC check is read-only. It does not use a wallet, secret key, or funds. A successful RPC read proves connectivity and returned chain metadata only; it does not prove a transaction, contract execution, or USDC support.
+`npm run test:evm` compiles with Solidity 0.8.30 and `evmVersion: paris` before running a local EVM configured with chain ID 420420777. Local verification is not V3 LIVE evidence.
+
+The RPC check is read-only. It does not use a wallet, secret key, or funds.
 
 ## Repository map
 
 - `dist/` — deployable static simulator.
-- `tests/` — deterministic outcome tests.
+- `contracts/evm/TrustFall.sol` — native-tPOT V3 EVM escrow candidate.
+- `tests/trustfall-evm.test.mjs` — settlement, authorization, conservation, and double-settlement tests.
+- `scripts/compile-evm.mjs` — reproducible Solidity 0.8.30 Paris build.
 - `scripts/rpc-smoke.mjs` — read-only Portaldot RPC evidence collector.
-- `contracts/trustfall/` — ink! compatibility candidate.
-- `docs/ARCHITECTURE.md` — architecture diagram and trust boundaries.
-- `docs/RESEARCH.md` — official-source compatibility matrix.
-- `docs/EVIDENCE.md` — evidence register and claim vocabulary.
-- `docs/INTERIM_SUBMISSION.md` — copy-ready English interim submission.
-- `docs/DEMO_GUIDE.md` — short walkthrough with expected balances.
-- `docs/SUBMISSION_CHECKLIST.md` — interim handoff and remaining checks.
-- `docs/DEVLOG.md` — dated development record and next proof steps.
+- `contracts/trustfall/` — legacy ink! compatibility candidate.
+- `docs/V3_EVM_EVIDENCE.md` — current proof register and missing live steps.
+- `docs/ARCHITECTURE.md` — architecture and trust boundaries.
+- `docs/EVIDENCE.md` — claim vocabulary.
 
 ## Safety
 
-This prototype intentionally has no wallet connection and accepts no secrets. Never paste a seed phrase or private key into this project. No real-fund transaction is required for the demo.
+Never paste a seed phrase or private key into this project. Use testnet tPOT only. No Mainnet transaction is required or authorized by this repository.
 
 ## Official references
 
 - Portaldot website: https://www.portaldot.world/
 - Developer docs: https://portaldot-dev.readthedocs.io/en/latest/
 - Chain info: https://portaldot-dev.readthedocs.io/en/latest/chain-info.html
-- ink! interfacing: https://portaldot-dev.readthedocs.io/en/latest/python-sdk/usage/ink-contract-interfacing.html
 - Official GitHub linked by Portaldot: https://github.com/portaldotVolunteer/Portaldot
-
-
