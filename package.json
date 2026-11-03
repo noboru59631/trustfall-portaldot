@@ -7,7 +7,8 @@
     "test": "node --test tests/simulator.test.mjs",
     "build:evm": "node scripts/compile-evm.mjs",
     "test:evm": "node scripts/compile-evm.mjs && node --test tests/trustfall-evm.test.mjs",
-    "check:rpc": "node scripts/rpc-smoke.mjs"
+    "check:rpc": "node scripts/rpc-smoke.mjs",
+    "verify:v3": "node scripts/verify-v3-live.mjs"
   },
   "devDependencies": {
     "ethers": "6.15.0",

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "SUCCESS",
+  "network": {
+    "name": "Portaldot V3 Testnet",
+    "chainId": 420420777,
+    "rpcUrl": "https://test-evm-rpc-v3.portaldot.dev/"
+  },
+  "action": "claimRefundAfterDeadline",
+  "contract": "0xcabcEbe5C50880751Dd990e776828CFac6cF393E",
+  "client": "0x9E8F0653354873883FB26E76f1925d36946c8777",
+  "transaction": {
+    "hash": "0xc837efb9566c9bd60c091e1a1373a7b0d6fce0ae74f41cb897e1f79f65c5acb7",
+    "blockNumber": 307125,
+    "transactionIndex": 1,
+    "nonce": 1,
+    "input": "0xf7004a00",
+    "valueWei": "0"
+  },
+  "receipt": {
+    "status": 1,
+    "blockHash": "0xbb7e262a518b711143208ace0c391d15ee153d0e13c5e6a92a45f17482c48e6b",
+    "event": {
+      "name": "Resolved",
+      "state": 4,
+      "clientAmountWei": "1000000000000000000"
+    }
+  },
+  "postTransaction": {
+    "state": 4,
+    "stateName": "Refunded",
+    "contractBalanceWei": "0",
+    "contractBalanceTPOT": "0",
+    "clientRefundTPOT": "1"
+  },
+  "verification": {
+    "rpc": "Receipt status 1, state eth_call returned Refunded (4), and contract eth_getBalance returned 0.",
+    "source": "Checked against the locally captured TrustFall V3 refund evidence JSON."
+  }
+}

@@ -43,8 +43,8 @@ export const scenarios = {
   },
   dispute: {
     name: "Quality dispute",
-    headline: "Disputed work stays held pending resolution",
-    outcome: "HOLD",
+    headline: "Disputed is an on-chain hold state, not a terminal payout",
+    outcome: "DISPUTED",
     tone: "hold",
     balances: { community: 0, freelancer: 0, held: 500 },
     steps: [
@@ -52,7 +52,7 @@ export const scenarios = {
       ["500 USDC funded", "Funds enter escrow before work begins."],
       ["Design delivered", "The freelancer submits files and a delivery note."],
       ["Quality disputed", "Neither payment nor refund is automatic."],
-      ["Resolution pending", "500 USDC remains held until both parties or a mediator decide."],
+      ["State = Disputed", "500 USDC remains held. In the live contract, only the Arbiter can resolve it."],
     ],
   },
 };
@@ -68,21 +68,21 @@ export function resolveScenario(scenarioId, resolution = "hold") {
       outcome: "PAYMENT",
       tone: "success",
       balances: { community: 0, freelancer: 500, held: 0 },
-      finalStep: ["Resolution signed", "The mediator-approved outcome releases 500 USDC."],
+      finalStep: ["Arbiter resolves", "The Arbiter-only outcome releases 500 USDC."],
     },
     refund: {
       headline: "The dispute resolves with a full refund",
       outcome: "REFUND",
       tone: "danger",
       balances: { community: 500, freelancer: 0, held: 0 },
-      finalStep: ["Resolution signed", "The mediator-approved outcome refunds 500 USDC."],
+      finalStep: ["Arbiter resolves", "The Arbiter-only outcome refunds 500 USDC."],
     },
     split: {
       headline: "The dispute resolves with a negotiated split",
       outcome: "SPLIT",
       tone: "warning",
       balances: { community: 150, freelancer: 350, held: 0 },
-      finalStep: ["Resolution signed", "350 USDC pays the freelancer and 150 USDC is refunded."],
+      finalStep: ["Arbiter resolves", "350 USDC pays the freelancer and 150 USDC is refunded."],
     },
   };
 

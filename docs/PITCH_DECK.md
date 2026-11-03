@@ -15,7 +15,7 @@ TrustFall lets both sides preview the agreement before signing. The [live demo](
 - Responsive English prototype published and tested across desktop and mobile.
 - Eight deterministic tests pass, including 500 USDC conservation.
 - Public [source and evidence](https://github.com/noboru59631/trustfall-portaldot) include the README, development log, architecture, and read-only RPC responses.
-- The Portaldot V3 EVM endpoint returned chain ID 420420777 in a read-only call. No transaction or contract execution is claimed.
+- Portaldot V3 Testnet chain ID 420420777 now has two verified terminal agreements: a 1 tPOT deadline refund and a disputed 0.001 tPOT 70/30 split, both ending with zero contract balance.
 
 ## 4. Why Portaldot
 
@@ -23,7 +23,7 @@ The proposed next layer is a Portaldot testnet escrow that enforces the same exp
 
 ## 5. Next milestone and support
 
-Complete and test the escrow transitions, verify an appropriate testnet asset route, deploy without real funds, then publish a contract address, transaction hashes, and event evidence. Technical review of Portaldot V3 contract compatibility and a funded test environment would help turn the simulation into verifiable settlement.
+Extend verification beyond the two proven terminal paths, complete an independent security review, and investigate an official testnet asset route before any USDC or Mainnet claim. A callable DaaS integration also needs separate implementation evidence.
 
-**Evidence boundary:** The current 500 USDC balance is simulated. No wallet is connected, no token moved, and no contract has been deployed or executed.
+**Evidence boundary:** The 500 USDC balance remains simulated. The V3 LIVE panel is separate and proves only the published native-tPOT refund and one disputed split. It is not Mainnet, USDC, a security audit, or complete branch coverage.
 

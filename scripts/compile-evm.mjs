@@ -8,7 +8,10 @@ const input = {
   sources: { "TrustFall.sol": { content: source } },
   settings: {
     evmVersion: "paris",
-    optimizer: { enabled: true, runs: 200 },
+    // Match the size-optimized settings used for the V3 deployment.
+    optimizer: { enabled: true, runs: 1 },
+    viaIR: true,
+    metadata: { appendCBOR: false, bytecodeHash: "none" },
     outputSelection: { "*": { "*": ["abi", "evm.bytecode.object"] } }
   }
 };

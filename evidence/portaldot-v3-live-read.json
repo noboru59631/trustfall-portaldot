@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-02T14:20:04.526Z",
+  "network": {
+    "name": "Portaldot V3 Testnet",
+    "rpcUrl": "https://test-evm-rpc-v3.portaldot.dev/",
+    "clientVersion": "eth-rpc/main-fddd431/x86_64-unknown-linux-gnu/rustc1.98.0",
+    "chainId": 420420777,
+    "latestBlock": 292814,
+    "latestTimestamp": 1793629200,
+    "latestTimestampIso": "2026-11-02T14:20:00.000Z"
+  },
+  "deployment": {
+    "transactionHash": "0x8406518fbbba0fdeae2102e113d8e4894a56d3b7855adba30c40f662d473ca6a",
+    "blockNumber": 292360,
+    "receiptStatus": 1,
+    "contractAddress": "0xcabcebe5c50880751dd990e776828cfac6cf393e",
+    "sender": "0x9e8f0653354873883fb26e76f1925d36946c8777",
+    "nonce": 0,
+    "valueWei": "1000000000000000000",
+    "valueTPOT": "1.0",
+    "gasUsed": "7352372788036739",
+    "effectiveGasPriceWei": "24070",
+    "feeWei": "176971613008044307730",
+    "feeTPOT": "176.97161300804430773",
+    "sourceCreationDataMatchesTransaction": true
+  },
+  "contract": {
+    "address": "0xcabcEbe5C50880751Dd990e776828CFac6cF393E",
+    "codePresent": true,
+    "codeBytes": 2048,
+    "client": "0x9E8F0653354873883FB26E76f1925d36946c8777",
+    "freelancer": "0xe6ae12Ce008B6b75aA806852FB4b0A99fc853C68",
+    "arbiter": "0x6434860ca1DEE25Da47aBB5F026efaBd9b59702e",
+    "amountWei": "1000000000000000000",
+    "amountTPOT": "1.0",
+    "refundAfter": 1793712768,
+    "refundAfterIso": "2026-11-03T13:32:48.000Z",
+    "refundAvailableAtCapture": false,
+    "state": 0,
+    "stateName": "Funded",
+    "balanceWei": "1000000000000000000",
+    "balanceTPOT": "1.0"
+  },
+  "accounts": [
+    {
+      "address": "0x9E8F0653354873883FB26E76f1925d36946c8777",
+      "balanceWei": "71928386991955692270",
+      "balanceTPOT": "71.92838699195569227",
+      "nonce": 1
+    },
+    {
+      "address": "0xe6ae12Ce008B6b75aA806852FB4b0A99fc853C68",
+      "balanceWei": "0",
+      "balanceTPOT": "0.0",
+      "nonce": 0
+    },
+    {
+      "address": "0x6434860ca1DEE25Da47aBB5F026efaBd9b59702e",
+      "balanceWei": "0",
+      "balanceTPOT": "0.0",
+      "nonce": 0
+    },
+    {
+      "address": "0xcabcEbe5C50880751Dd990e776828CFac6cF393E",
+      "balanceWei": "1000000000000000000",
+      "balanceTPOT": "1.0",
+      "nonce": 1
+    }
+  ],
+  "evidenceStatus": {
+    "deployment": "V3 LIVE",
+    "funding": "V3 LIVE (constructor value)",
+    "payment": "NOT EXECUTED",
+    "refund": "NOT EXECUTED",
+    "dispute": "NOT EXECUTED"
+  }
+}

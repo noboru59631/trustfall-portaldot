@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "SUCCESS",
+  "capturedAt": "2026-11-03T21:19:11.981Z",
+  "network": {
+    "name": "Portaldot V3 Testnet",
+    "rpcUrl": "https://test-evm-rpc-v3.portaldot.dev/",
+    "chainId": 420420777
+  },
+  "contract": {
+    "address": "0x9ACdc6a7110f722f85b660cdB495B553F5A1Ba68",
+    "deployTx": "0xc53884f552f4343936ec07c3ac4824545e7929950672f6cf71b95925e65366b4",
+    "openDisputeTx": "0xfbda236c4255b52221484c6da9e873eb93210945b7b62191fdef1b39fd63fcce",
+    "openDisputeBlock": 307584,
+    "stateAfterDispute": 2,
+    "stateNameAfterDispute": "Disputed",
+    "balanceAfterDisputeTPOT": "0.001"
+  },
+  "resolution": {
+    "transactionHash": "0xa7549a45985c2bba0a438381b2ed51c729f411574e073ac15c79e6997ccb1081",
+    "function": "resolveDispute(uint256)",
+    "argumentWei": "700000000000000",
+    "receipt": {
+      "status": 1,
+      "blockNumber": 311276,
+      "blockHash": "0x08fe48d76ab95cce0d6c9adaa2c858ed19c4a4369a8cf4c88ff6b37a2a333681"
+    },
+    "event": {
+      "name": "Resolved",
+      "state": 5,
+      "freelancerWei": "700000000000000",
+      "clientWei": "300000000000000"
+    }
+  },
+  "distribution": {
+    "freelancerTPOT": "0.0007",
+    "clientTPOT": "0.0003"
+  },
+  "postTransaction": {
+    "state": 5,
+    "stateName": "Split",
+    "contractBalanceWei": "0",
+    "contractBalanceTPOT": "0"
+  },
+  "verification": {
+    "rpc": "Receipt, event, terminal state, zero contract balance, and recipient balance deltas verified.",
+    "ui": "Local TrustFall proof UI displayed the same terminal state and values.",
+    "source": "Checked against the locally captured dispute and resolution evidence JSON files."
+  }
+}
